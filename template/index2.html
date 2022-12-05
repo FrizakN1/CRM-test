@@ -1,0 +1,44 @@
+{{define "index2"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <link rel="stylesheet" href="assets/css/null.style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+    </head>
+    <body>
+    <nav>
+        <div class="menuBtn"></div>
+        <ul>
+            <li>
+                <a href="/">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="/login">
+                    <span class="icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                    <span class="text">Авторизация</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="/about">
+                    <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                    <span class="text">О нас</span>
+                </a>
+            </li>
+            <li>
+                <a href="/settings">
+                    <span class="icon"><i class="fa-solid fa-gear"></i></i></span>
+                    <span class="text">Настройки</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="assets/js/script.js"></script>
+    </body>
+    </html>
+{{end}}
