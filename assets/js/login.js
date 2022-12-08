@@ -9,6 +9,12 @@ if (loginBtn) {
                 Login: document.querySelector('#login').value,
                 Password: document.querySelector('#login').value,
             }
+
+            Send('POST', '/login', loginData, (response) => {
+                if (response) {
+                    window.location.href = '/';
+                }
+            })
         } else {
             let loginAlert = document.querySelector('#login').closest('label').querySelector('p');
             let passwordAlert = document.querySelector('#password').closest('label').querySelector('p');
